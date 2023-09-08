@@ -38,4 +38,5 @@ func destructureUrl() {
 
 func main() {
 	createUrl()
+	destructureUrl()
 }
