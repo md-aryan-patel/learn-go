@@ -14,7 +14,11 @@ func main() {
 	input, _ := reader.ReadString('\n')
 	fmt.Println("Thanks for rating, ", input)
 
+	// Parsing to flot
 	numRating, err := strconv.ParseFloat(strings.TrimSpace(input), 64)
+	// Parsing to int
+	intrating, _ := strconv.ParseInt(input, 10, 64)
+	fmt.Println(intrating)
 
 	if err != nil {
 		fmt.Println(err)

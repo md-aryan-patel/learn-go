@@ -7,6 +7,7 @@ import (
 )
 
 func createFile(filename string, content string) {
+	// Creating file in directory
 	file, err := os.Create("./" + filename)
 	// Handling Error
 	if err != nil {

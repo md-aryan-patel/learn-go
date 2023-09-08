@@ -5,6 +5,12 @@ import (
 	"sort"
 )
 
+func playSlice() {
+	var users = []string{"captain", "price", "jerrysujj", "zeus", "yeahboi"}
+	users = append(users, "Aryan")
+	fmt.Println(users)
+}
+
 func main() {
 	var fruitList = []string{"Apple", "Tomato", "Peach"}
 	fmt.Printf("Type of fruit list is: %T", fruitList)
@@ -28,4 +34,5 @@ func main() {
 	var index int = 2
 	// startpoint(inclusive):endpoint(non-inclusive)
 	cources = append(cources[:index], cources[index+1:]...)
+	playSlice()
 }
